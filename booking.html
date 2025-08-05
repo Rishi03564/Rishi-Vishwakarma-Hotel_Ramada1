@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Stay - Hotel Ramada</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">Hotel Ramada</a>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="dining.html">Dining</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="booking.html" class="btn active">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-content">
+        <h2>Book Your Stay</h2>
+        <form id="bookingForm" class="booking-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="checkin">Check-in Date:</label>
+            <input type="date" id="checkin" name="checkin" required>
+
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" name="checkout" required>
+
+            <label for="room_type">Room Type:</label>
+            <select id="room_type" name="room_type">
+                <option value="standard">Standard Room - 3000 Rs</option>
+                <option value="deluxe">Deluxe Room - 6000 Rs</option>
+                <option value="suite">Suite Room - 10000 Rs</option>
+            </select>
+
+            <button type="submit" class="btn">Confirm Booking</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Hotel Ramada. All rights reserved.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

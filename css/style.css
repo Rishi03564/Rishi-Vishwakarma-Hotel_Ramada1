@@ -1,0 +1,192 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+/* Header and Navigation */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    background: #555;
+    border-radius: 5px;
+}
+
+.btn {
+    background: #f7c08a;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #f5a65b;
+}
+
+/* Hero Section */
+.hero {
+    height: 60vh;
+    background: url('https://images.trvl-media.com/lodging/39000000/38790000/38786200/38786174/30151558.jpg?impolicy=resizecrop&rw=1200&ra=fit../images/hero-bg.jpg') no-repeat center center/cover;
+    color: rgb(241, 245, 239);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* Intro Section */
+.intro {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Page Content */
+.page-content {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.page-content h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Room Gallery */
+.room-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.room-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+.room-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.room-card .price {
+    font-weight: bold;
+    color: #f7c08a;
+}
+
+/* Room Details */
+.room-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Facilities */
+.facilities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.facility {
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.facility img {
+    max-width: 100%;
+}
+
+/* Dining */
+.dining-option {
+    margin-bottom: 30px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.dining-option img {
+    max-width: 200px;
+}
+
+/* Forms */
+.contact-form, .booking-form {
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.contact-form input, .contact-form textarea,
+.booking-form input, .booking-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+}
